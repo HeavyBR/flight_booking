@@ -5,6 +5,7 @@ defmodule Flightex.Users.CreateOrUpdateTest do
 
   describe "call/1" do
     setup do
+      # Esse Agent ta sendo exportado do módulo Users, ou seja, o Agent user
       Agent.start_link(%{})
       # O Agent.start_link vai iniciar os 2 agents antes do teste
       # Deve ser implementado para os testes passarem
